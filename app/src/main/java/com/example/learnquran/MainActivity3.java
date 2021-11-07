@@ -2,6 +2,7 @@ package com.example.learnquran;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +12,7 @@ import java.util.Random;
 
 public class MainActivity3 extends AppCompatActivity {
 
+    Intent intent;
     int rand,a,b,score=0,total=0;
     Character c='\u0627';
     Character c1='\u0649';
@@ -31,6 +33,7 @@ public class MainActivity3 extends AppCompatActivity {
         Button btnNiteeyah=findViewById(R.id.button17);
         Button btnLisaveyah=findViewById(R.id.button18);
         Button btnGhunna=findViewById(R.id.button19);
+        Button btnFinish=findViewById(R.id.button20);
 
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,6 +148,17 @@ public class MainActivity3 extends AppCompatActivity {
                     txt2.setText("False");
                     total+=5;
                 }
+            }
+        });
+        btnFinish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String score1=String.valueOf(score);
+                String total1=String.valueOf(total);
+                intent=new Intent(MainActivity3.this,MainActivity4.class);
+                intent.putExtra("scoree",score1);
+                intent.putExtra("totall",total1);
+                startActivity(intent);
             }
         });
     }
