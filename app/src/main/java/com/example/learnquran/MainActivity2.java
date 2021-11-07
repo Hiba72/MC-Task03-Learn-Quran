@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.Random;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -22,7 +24,10 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Random random = new Random();
         TextView txt = findViewById(R.id.textView5);
+        TextView txt1=findViewById(R.id.textView6);
+        TextView txt2=findViewById(R.id.textView7);
         Button btnGenerate= findViewById(R.id.button4);
+        Button btnHalqiyah =findViewById(R.id.button5);
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +36,18 @@ public class MainActivity2 extends AppCompatActivity {
                 rand=random.nextInt(23)+a;
                 letter=(char) rand;
                 txt.setText(String.valueOf(letter));
+            }
+        });
+        btnHalqiyah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (letter=='\u0627' || letter=='\u0647' || letter=='\u0639' || letter=='\u062D' || letter=='\u063A' || letter=='\u062E')
+                {
+                   txt1.setText("True");
+                }
+                else{
+                    txt2.setText("False");
+                }
             }
         });
     }
