@@ -28,6 +28,8 @@ public class MainActivity2 extends AppCompatActivity {
         TextView txt2=findViewById(R.id.textView7);
         Button btnGenerate= findViewById(R.id.button4);
         Button btnHalqiyah =findViewById(R.id.button5);
+        Button btnLahatiyah =findViewById(R.id.button6);
+
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +38,8 @@ public class MainActivity2 extends AppCompatActivity {
                 rand=random.nextInt(23)+a;
                 letter=(char) rand;
                 txt.setText(String.valueOf(letter));
+                txt1.setText("");
+                txt2.setText("");
             }
         });
         btnHalqiyah.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +52,18 @@ public class MainActivity2 extends AppCompatActivity {
                 else{
                     txt2.setText("False");
                 }
+            }
+        });
+        btnLahatiyah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             if(letter=='\u0642' || letter=='\u0643')
+             {
+                 txt1.setText("True");
+             }
+             else{
+                 txt2.setText("False");
+             }
             }
         });
     }
