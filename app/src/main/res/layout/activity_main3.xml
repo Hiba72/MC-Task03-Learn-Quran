@@ -13,6 +13,7 @@
         android:layout_marginTop="40dp"
         android:background="#DA1A1A"
         android:text="---EXAM---"
+        android:textColor="#FAF6F6"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,10 +34,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
+        android:background="#60F321"
+        android:backgroundTint="#1FC626"
+        android:foregroundTint="#19EA21"
+        android:shadowColor="#12C519"
         android:text="Generate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#20C626" />
 
     <Button
         android:id="@+id/button13"
