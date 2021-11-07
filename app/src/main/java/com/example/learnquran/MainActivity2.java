@@ -29,7 +29,8 @@ public class MainActivity2 extends AppCompatActivity {
         Button btnGenerate= findViewById(R.id.button4);
         Button btnHalqiyah =findViewById(R.id.button5);
         Button btnLahatiyah =findViewById(R.id.button6);
-
+        Button btnShajariyah=findViewById(R.id.button7);
+        Button btnTarfiyah=findViewById(R.id.button9);
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +65,28 @@ public class MainActivity2 extends AppCompatActivity {
              else{
                  txt2.setText("False");
              }
+            }
+        });
+        btnShajariyah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(letter=='\u062C' ||letter=='\u0634' || letter=='\u064A' || letter=='\u0636'){
+                    txt1.setText("True");
+                }
+                else{
+                    txt2.setText("False");
+                }
+            }
+        });
+        btnTarfiyah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(letter=='\u0644' ||letter=='\u0646' || letter=='\u0631' ){
+                    txt1.setText("True");
+                }
+                else{
+                    txt2.setText("False");
+                }
             }
         });
     }
