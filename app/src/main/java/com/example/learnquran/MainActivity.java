@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
     Intent intent;
     Intent intent1;
+    Intent intent2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         txtRoll.setText("BCSF18A540");
         Button btn=findViewById(R.id.button);
         Button btn1=findViewById(R.id.button2);
+        Button btn2=findViewById(R.id.button3);
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
               startActivity(intent1);
             }
         });
-
+        btn2.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              intent2=new Intent(MainActivity.this,MainActivity3.class);
+              startActivity(intent2);
+           }
+        });
     }
 }
