@@ -39,8 +39,11 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 a=Character.valueOf(c);
                 b=Character.valueOf(c1);
-                rand=random.nextInt(30)+a;
+                rand=random.nextInt(35)+a;
                 letter=(char) rand;
+                if(letter=='\u063B' || letter=='\u063C'|| letter=='\u063D' ||letter=='\u063E' || letter=='\u063F' || letter=='\u0640'){
+                    letter='\u0643';
+                }
                 txt.setText(String.valueOf(letter));
                 txt1.setText("");
                 txt2.setText("");
