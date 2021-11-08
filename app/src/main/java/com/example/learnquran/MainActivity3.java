@@ -21,6 +21,7 @@ public class MainActivity3 extends AppCompatActivity {
     String score1;
     String total1;
     boolean isAns=false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -231,6 +232,16 @@ public class MainActivity3 extends AppCompatActivity {
         txt4.setText("");
         txt5.setText("");
 
+    }
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("value",String.valueOf(letter));
+    }
+    protected void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        String myString = savedInstanceState.getString("value");
+        TextView txt = findViewById(R.id.textView9);
+        txt.setText(myString);
 
     }
 }
