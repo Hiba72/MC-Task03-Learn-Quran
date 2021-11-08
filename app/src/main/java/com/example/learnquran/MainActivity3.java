@@ -47,7 +47,7 @@ public class MainActivity3 extends AppCompatActivity {
                 b=Character.valueOf(c1);
                 rand=random.nextInt(35)+a;
                 letter=(char) rand;
-                if(letter=='\u063B' || letter=='\u063C'|| letter=='\u063D' ||letter=='\u063E' || letter=='\u063F' || letter=='\u0640'){
+                if(letter=='\u063B' || letter=='\u0629'|| letter=='\u063C'|| letter=='\u063D' ||letter=='\u063E' || letter=='\u063F' || letter=='\u0640'){
                     letter='\u0643';
                 }
                 txt.setText(String.valueOf(letter));
