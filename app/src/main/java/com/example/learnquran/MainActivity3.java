@@ -243,8 +243,8 @@ public class MainActivity3 extends AppCompatActivity {
     protected void onRestoreInstanceState(Bundle savedInstanceState){
         super.onRestoreInstanceState(savedInstanceState);
         String myStrings = savedInstanceState.getString("values");
-        TextView txt = findViewById(R.id.textView9);
-        txt.setText(myStrings);
+        TextView txt1 = findViewById(R.id.textView9);
+        txt1.setText(myStrings);
 
     }
 }
