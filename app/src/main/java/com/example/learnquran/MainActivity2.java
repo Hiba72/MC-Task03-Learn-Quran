@@ -21,6 +21,7 @@ public class MainActivity2 extends AppCompatActivity {
     Character letter;
     String str1;
     boolean isAns=false;
+    boolean isClick=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +41,7 @@ public class MainActivity2 extends AppCompatActivity {
         btnGenerate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                isClick=false;
                 isAns=false;
                 a=Character.valueOf(c);
                 b=Character.valueOf(c1);
@@ -53,146 +55,168 @@ public class MainActivity2 extends AppCompatActivity {
                 txt2.setText("");
             }
         });
-        btnHalqiyah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (letter=='\u0627' || letter=='\u0647' || letter=='\u0639' || letter=='\u062D' || letter=='\u063A' || letter=='\u062E')
-                {
-                    if(isAns==false) {
-                        str1 = "True";
-                        txt1.setText("True");
-                        isAns=true;
+        if(isClick==false) {
+            btnHalqiyah.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (letter == '\u0627' || letter == '\u0647' || letter == '\u0639' || letter == '\u062D' || letter == '\u063A' || letter == '\u062E') {
+                        if (isAns == false) {
+                            str1 = "True";
+                            txt1.setText("True");
+                            isAns = true;
+                            isClick = true;
+                        }
+                    } else {
+                        if (isAns == false) {
+                            str1 = "False";
+                            txt2.setText("False");
+                            isAns = true;
+                            isClick = true;
+                        }
                     }
                 }
-                else{
-                    if(isAns==false) {
-                        str1 = "False";
-                        txt2.setText("False");
-                        isAns=true;
+            });
+        }
+        if(isClick==false) {
+            btnLahatiyah.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (letter == '\u0642' || letter == '\u0643') {
+                        if (isAns == false) {
+                            str1 = "True";
+                            txt1.setText("True");
+                            isAns = true;
+                            isClick = true;
+                        }
+                    } else {
+                        if (isAns == false) {
+                            str1 = "False";
+                            txt2.setText("False");
+                            isAns = true;
+                            isClick = true;
+                        }
                     }
                 }
-            }
-        });
-        btnLahatiyah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-             if(letter=='\u0642' || letter=='\u0643')
-             {
-                 if(isAns==false) {
-                     str1 = "True";
-                     txt1.setText("True");
-                     isAns=true;
-                 }
-             }
-             else{
-                 if(isAns==false) {
-                     str1 = "False";
-                     txt2.setText("False");
-                     isAns=true;
-                 }
-             }
-            }
-        });
-        btnShajariyah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(letter=='\u062C' ||letter=='\u0634' || letter=='\u064A' || letter=='\u0636'|| letter=='\u0649'){
-                    if(isAns==false) {
-                        str1 = "True";
-                        txt1.setText("True");
-                        isAns=true;
+            });
+        }
+        if(isClick==false) {
+            btnShajariyah.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (letter == '\u062C' || letter == '\u0634' || letter == '\u064A' || letter == '\u0636' || letter == '\u0649') {
+                        if (isAns == false) {
+                            str1 = "True";
+                            txt1.setText("True");
+                            isAns = true;
+                            isClick = true;
+                        }
+                    } else {
+                        if (isAns == false) {
+                            str1 = "False";
+                            txt2.setText("False");
+                        }
+                        isAns = true;
+                        isClick = true;
                     }
                 }
-                else{
-                    if(isAns==false){
-                    str1="False";
-                    txt2.setText("False");}
-                    isAns=true;
-                }
-            }
-        });
-        btnTarfiyah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(letter=='\u0644' ||letter=='\u0646' || letter=='\u0631' ) {
-                    if (isAns == false) {
-                        str1 = "True";
-                        txt1.setText("True");
-                        isAns=true;
+            });
+        }
+        if(isClick==false) {
+            btnTarfiyah.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (letter == '\u0644' || letter == '\u0646' || letter == '\u0631') {
+                        if (isAns == false) {
+                            str1 = "True";
+                            txt1.setText("True");
+                            isAns = true;
+                            isClick = true;
+                        }
+                    } else {
+                        if (isAns == false) {
+                            str1 = "False";
+                            txt2.setText("False");
+                            isAns = true;
+                            isClick = true;
+                        }
                     }
                 }
-                else {
-                    if (isAns == false) {
-                        str1 = "False";
-                        txt2.setText("False");
-                        isAns=true;
+            });
+        }
+        if(isClick==false) {
+            btnNiteeyah.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (letter == '\u062A' || letter == '\u062F' || letter == '\u0637') {
+                        if (isAns == false) {
+                            str1 = "True";
+                            txt1.setText("True");
+                            isAns = true;
+                            isClick = true;
+                        }
+                    } else {
+                        if (isAns == false) {
+                            str1 = "False";
+                            txt2.setText("False");
+                            isAns = true;
+                            isClick = true;
+                        }
                     }
                 }
-            }
-        });
-        btnNiteeyah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(letter=='\u062A' ||letter=='\u062F' || letter=='\u0637' ) {
-                    if (isAns == false) {
-                        str1 = "True";
-                        txt1.setText("True");
-                        isAns=true;
+            });
+        }
+        if(isClick==false) {
+            btnLisaveyah.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (letter == '\u0638' || letter == '\u0630' || letter == '\u062B' || letter == '\u0635' || letter == '\u0632' || letter == '\u0633') {
+                        if (isAns == false) {
+                            str1 = "True";
+                            txt1.setText("True");
+                            isAns = true;
+                            isClick = true;
+                        }
+                    } else {
+                        if (isAns == false) {
+                            str1 = "False";
+                            txt2.setText("False");
+                            isAns = true;
+                            isClick = true;
+                        }
                     }
                 }
-                else {
-                    if (isAns == false) {
-                        str1 = "False";
-                        txt2.setText("False");
-                        isAns=true;
+            });
+        }
+        if(isClick==false) {
+            btnGhunna.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (letter == '\u0645' || letter == '\u0646' || letter == '\u0641' || letter == '\u0628' || letter == '\u0648') {
+                        if (isAns == false) {
+                            str1 = "True";
+                            txt1.setText("True");
+                            isAns = true;
+                            isClick = true;
+                        }
+                    } else {
+                        if (isAns == false) {
+                            str1 = "False";
+                            txt2.setText("False");
+                            isAns = true;
+                            isClick = true;
+                        }
                     }
                 }
-            }
-        });
-        btnLisaveyah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(letter=='\u0638' ||letter=='\u0630' || letter=='\u062B' || letter=='\u0635' || letter=='\u0632' || letter=='\u0633' ) {
-                    if (isAns == false) {
-                        str1 = "True";
-                        txt1.setText("True");
-                        isAns=true;
-                    }
-                }
-                else {
-                    if (isAns == false) {
-                        str1 = "False";
-                        txt2.setText("False");
-                        isAns=true;
-                    }
-                }
-            }
-        });
-        btnGhunna.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(letter=='\u0645' ||letter=='\u0646' || letter=='\u0641' || letter=='\u0628' || letter=='\u0648' ) {
-                    if (isAns == false) {
-                        str1 = "True";
-                        txt1.setText("True");
-                        isAns=true;
-                    }
-                }
-                else {
-                    if (isAns == false) {
-                        str1 = "False";
-                        txt2.setText("False");
-                        isAns=true;
-                    }
-                }
-            }
-        });
+            });
+        }
     }
     public void onSaveInstanceState(Bundle savedInstanceState){
         super.onSaveInstanceState(savedInstanceState);
         savedInstanceState.putString("value",String.valueOf(letter));
             savedInstanceState.putString("value1", str1);
-
+           if(str1!=null){
+               isClick=true;
+           }
 
     }
     protected void onRestoreInstanceState(Bundle savedInstanceState){
@@ -204,12 +228,14 @@ public class MainActivity2 extends AppCompatActivity {
             TextView txt1 = findViewById(R.id.textView6);
             txt1.setText(myString1);
             txt1.setTextColor(Color.GREEN);
+            isClick=true;
 
         }
         else {
             TextView txt2 = findViewById(R.id.textView7);
             txt2.setText(myString1);
             txt2.setTextColor(Color.RED);
+            isClick=true;
         }
         txt.setText(myString);
     }
