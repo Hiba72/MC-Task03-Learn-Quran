@@ -38,7 +38,8 @@ public class MainActivity3 extends AppCompatActivity {
         Button btnNiteeyah=findViewById(R.id.button17);
         Button btnLisaveyah=findViewById(R.id.button18);
         Button btnGhunna=findViewById(R.id.button19);
-        Button btnAsleeyah=findViewById(R.id.button22);
+
+
         Button btnFinish=findViewById(R.id.button20);
 
         btnGenerate.setOnClickListener(new View.OnClickListener() {
@@ -168,7 +169,7 @@ public class MainActivity3 extends AppCompatActivity {
         btnLisaveyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter=='\u0638' ||letter=='\u0630' || letter=='\u062B' ){
+                if(letter=='\u0638' ||letter=='\u0630' || letter=='\u062B' || letter=='\u0633' ||letter=='\u0632' || letter=='\u0635' ){
                     if(isAns==false) {
                         txt1.setText("True");
                         score += 5;
@@ -186,27 +187,7 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             }
         });
-        btnAsleeyah.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(letter=='\u0635' || letter=='\u0632' || letter=='\u0633' ){
-                    if(isAns==false) {
-                        txt1.setText("True");
-                        score += 5;
-                        total += 5;
-                        isAns=true;
-                    }
-                }
-                else{
-                    if(isAns==false) {
-                        txt2.setText("False");
-                        total += 5;
-                        isAns=true;
 
-                    }
-                }
-            }
-        });
         btnGhunna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
