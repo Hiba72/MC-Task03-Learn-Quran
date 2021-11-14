@@ -17,7 +17,7 @@ public class MainActivity3 extends AppCompatActivity {
     int rand,a,b,score=0,total=0;
     Character c='\u0627';
     Character c1='\u0649';
-    Character letter;
+    Character letter='\0';
     String score1;
     String total1;
     boolean isAns=false;
@@ -61,7 +61,11 @@ public class MainActivity3 extends AppCompatActivity {
         btnHalqiyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (letter=='\u0627' || letter=='\u0647' || letter=='\u0639' || letter=='\u062D' || letter=='\u063A' || letter=='\u062E')
+                if(letter=='\0'){
+                    txt1.setText("Please generate any haruf");
+                    txt2.setText("");
+                }
+                else if (letter=='\u0627' || letter=='\u0647' || letter=='\u0639' || letter=='\u062D' || letter=='\u063A' || letter=='\u062E')
                 {
                     if(isAns==false) {
                         txt1.setText("True");
@@ -84,7 +88,12 @@ public class MainActivity3 extends AppCompatActivity {
         btnLahatiyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter=='\u0642' || letter=='\u0643')
+                if(letter=='\0'){
+                    txt1.setText("Please generate any haruf");
+                    txt2.setText("");
+
+                }
+               else if(letter=='\u0642' || letter=='\u0643')
                 {
                     if(isAns==false) {
                         txt1.setText("True");
@@ -106,7 +115,12 @@ public class MainActivity3 extends AppCompatActivity {
         btnShajariyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter=='\u062C' ||letter=='\u0634' || letter=='\u064A' || letter=='\u0636'|| letter=='\u0649'){
+                if(letter=='\0'){
+                    txt1.setText("Please generate any haruf");
+                    txt2.setText("");
+
+                }
+               else if(letter=='\u062C' ||letter=='\u0634' || letter=='\u064A' || letter=='\u0636'|| letter=='\u0649'){
                     if(isAns==false) {
                         txt1.setText("True");
                         score += 5;
@@ -127,7 +141,12 @@ public class MainActivity3 extends AppCompatActivity {
         btnTarfiyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter=='\u0644' ||letter=='\u0646' || letter=='\u0631' ){
+                if(letter=='\0'){
+                    txt1.setText("Please generate any haruf");
+                    txt2.setText("");
+
+                }
+                else if(letter=='\u0644' ||letter=='\u0646' || letter=='\u0631' ){
                     if(isAns==false) {
                         txt1.setText("True");
                         score += 5;
@@ -148,7 +167,12 @@ public class MainActivity3 extends AppCompatActivity {
         btnNiteeyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter=='\u062A' ||letter=='\u062F' || letter=='\u0637' ){
+                if(letter=='\0'){
+                    txt1.setText("Please generate any haruf");
+                    txt2.setText("");
+
+                }
+                else if(letter=='\u062A' ||letter=='\u062F' || letter=='\u0637' ){
                     if(isAns==false) {
                         txt1.setText("True");
                         score += 5;
@@ -169,7 +193,12 @@ public class MainActivity3 extends AppCompatActivity {
         btnLisaveyah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter=='\u0638' ||letter=='\u0630' || letter=='\u062B' || letter=='\u0633' ||letter=='\u0632' || letter=='\u0635' ){
+                if(letter=='\0'){
+                    txt1.setText("Please generate any haruf");
+                    txt2.setText("");
+
+                }
+                else if(letter=='\u0638' ||letter=='\u0630' || letter=='\u062B' || letter=='\u0633' ||letter=='\u0632' || letter=='\u0635' ){
                     if(isAns==false) {
                         txt1.setText("True");
                         score += 5;
@@ -191,7 +220,12 @@ public class MainActivity3 extends AppCompatActivity {
         btnGhunna.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(letter=='\u0645' ||letter=='\u0646' || letter=='\u0641' || letter=='\u0628' || letter=='\u0648' ){
+                if(letter=='\0'){
+                    txt1.setText("Please generate any haruf");
+                    txt2.setText("");
+
+                }
+                else if(letter=='\u0645' ||letter=='\u0646' || letter=='\u0641' || letter=='\u0628' || letter=='\u0648' ){
                    if(isAns==false) {
                        txt1.setText("True");
                        score += 5;
