@@ -62,7 +62,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(letter=='\0'){
-                    txt1.setText("Please generate any haruf");
+                    txt1.setText("Please generate any Arabic letter");
+                    txt1.setTextColor(Color.BLACK);
+                    txt1.setPadding(10,50,10,10);
                     txt2.setText("");
                 }
                 else if (letter=='\u0627' || letter=='\u0647' || letter=='\u0639' || letter=='\u062D' || letter=='\u063A' || letter=='\u062E')
@@ -89,7 +91,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(letter=='\0'){
-                    txt1.setText("Please generate any haruf");
+                    txt1.setText("Please generate any Arabic letter");
+                    txt1.setTextColor(Color.BLACK);
+                    txt1.setPadding(10,50,10,10);
                     txt2.setText("");
 
                 }
@@ -116,7 +120,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(letter=='\0'){
-                    txt1.setText("Please generate any haruf");
+                    txt1.setText("Please generate any Arabic letter");
+                    txt1.setTextColor(Color.BLACK);
+                    txt1.setPadding(10,50,10,10);
                     txt2.setText("");
 
                 }
@@ -142,7 +148,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(letter=='\0'){
-                    txt1.setText("Please generate any haruf");
+                    txt1.setText("Please generate any Arabic letter");
+                    txt1.setTextColor(Color.BLACK);
+                    txt1.setPadding(10,50,10,10);
                     txt2.setText("");
 
                 }
@@ -168,7 +176,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(letter=='\0'){
-                    txt1.setText("Please generate any haruf");
+                    txt1.setText("Please generate any Arabic letter");
+                    txt1.setTextColor(Color.BLACK);
+                    txt1.setPadding(10,50,10,10);
                     txt2.setText("");
 
                 }
@@ -194,7 +204,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(letter=='\0'){
-                    txt1.setText("Please generate any haruf");
+                    txt1.setText("Please generate any Arabic letter");
+                    txt1.setTextColor(Color.BLACK);
+                    txt1.setPadding(10,50,10,10);
                     txt2.setText("");
 
                 }
@@ -221,7 +233,9 @@ public class MainActivity3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(letter=='\0'){
-                    txt1.setText("Please generate any haruf");
+                    txt1.setText("Please generate any Arabic letter");
+                    txt1.setTextColor(Color.BLACK);
+                    txt1.setPadding(10,50,10,10);
                     txt2.setText("");
 
                 }

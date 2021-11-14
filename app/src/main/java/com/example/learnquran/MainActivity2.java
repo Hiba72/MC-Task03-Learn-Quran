@@ -60,7 +60,9 @@ public class MainActivity2 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if(letter=='\0'){
-                        txt1.setText("Please generate any haruf");
+                        txt1.setText("Please generate any Arabic letter");
+                        txt1.setTextColor(Color.BLACK);
+                        txt1.setPadding(10,50,10,10);
                         txt2.setText("");
                     }
                    else if (letter == '\u0627' || letter == '\u0647' || letter == '\u0639' || letter == '\u062D' || letter == '\u063A' || letter == '\u062E') {
@@ -86,7 +88,9 @@ public class MainActivity2 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if(letter=='\0'){
-                        txt1.setText("Please generate any haruf");
+                        txt1.setText("Please generate any Arabic letter");
+                        txt1.setTextColor(Color.BLACK);
+                        txt1.setPadding(10,50,10,10);
                         txt2.setText("");
                     }
                     else if (letter == '\u0642' || letter == '\u0643') {
@@ -112,7 +116,9 @@ public class MainActivity2 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if(letter=='\0'){
-                        txt1.setText("Please generate any haruf");
+                        txt1.setText("Please generate any Arabic letter");
+                        txt1.setTextColor(Color.BLACK);
+                        txt1.setPadding(10,50,10,10);
                         txt2.setText("");
                     }
                     else if (letter == '\u062C' || letter == '\u0634' || letter == '\u064A' || letter == '\u0636' || letter == '\u0649') {
@@ -138,7 +144,9 @@ public class MainActivity2 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if(letter=='\0'){
-                        txt1.setText("Please generate any haruf");
+                        txt1.setText("Please generate any Arabic letter");
+                        txt1.setTextColor(Color.BLACK);
+                        txt1.setPadding(10,50,10,10);
                         txt2.setText("");
                     }
                     else if (letter == '\u0644' || letter == '\u0646' || letter == '\u0631') {
@@ -164,7 +172,9 @@ public class MainActivity2 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if(letter=='\0'){
-                        txt1.setText("Please generate any haruf");
+                        txt1.setText("Please generate any Arabic letter");
+                        txt1.setTextColor(Color.BLACK);
+                        txt1.setPadding(10,50,10,10);
                         txt2.setText("");
                     }
                     else if (letter == '\u062A' || letter == '\u062F' || letter == '\u0637') {
@@ -190,7 +200,9 @@ public class MainActivity2 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if(letter=='\0'){
-                        txt1.setText("Please generate any haruf");
+                        txt1.setText("Please generate any Arabic letter");
+                        txt1.setTextColor(Color.BLACK);
+                        txt1.setPadding(10,50,10,10);
                         txt2.setText("");
                     }
                     else if (letter == '\u0638' || letter == '\u0630' || letter == '\u062B' || letter == '\u0635' || letter == '\u0632' || letter == '\u0633') {
@@ -216,7 +228,9 @@ public class MainActivity2 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if(letter=='\0'){
-                        txt1.setText("Please generate any haruf");
+                        txt1.setText("Please generate any Arabic letter");
+                        txt1.setTextColor(Color.BLACK);
+                        txt1.setPadding(10,50,10,10);
                         txt2.setText("");
                     }
                     else if (letter == '\u0645' || letter == '\u0646' || letter == '\u0641' || letter == '\u0628' || letter == '\u0648') {
